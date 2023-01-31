@@ -55,7 +55,7 @@ export default function ProductDetails() {
     ) {
       setSuccessSnackOpen(true);
     } else {
-      setErrorSnackMessage(response.message);
+      setErrorSnackMessage(response.message as string);
       setFailureSnackOpen(true);
     }
     setIsLoading(false);
